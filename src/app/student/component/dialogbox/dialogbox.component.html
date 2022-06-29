@@ -1,0 +1,16 @@
+
+<h2>Student Form</h2>
+
+<form [formGroup]="studentForm" class="example-form">
+    <mat-form-field>
+        <input matInput placeholder="userName" formControlName="userName">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="phone" formControlName="phone">
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="updateData()">Update</button>
+</form>
+
